@@ -9,6 +9,10 @@
 <body style="margin: 0;">
 
   <a-scene background="color: #8c8c8c">
+     <a-scene vr-mode-ui="enabled: false;"
+renderer="logarithmicDepthBuffer: true;"
+embedded
+arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;"></a-scene>
     <a-assets>
       <img
         id="floorTexture"
