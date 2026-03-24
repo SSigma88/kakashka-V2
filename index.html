@@ -5,10 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>A-Frame сцена — Виправлений Тор</title>
   <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
+  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
 </head>
 <body style="margin: 0;">
 
   <a-scene background="color: #8c8c8c">
+    <a-scene vr-mode-ui="enabled: false;"
+renderer="logarithmicDepthBuffer: true;"
+embedded
+arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;">
     <a-assets>
       <img
         id="floorTexture"
